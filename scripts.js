@@ -5,7 +5,7 @@ export const options = {
     duration: '10s',
 };
 export default function () {
-    const res = http.get('https://api.popmama.com/ping');
+    const res = http.get('https://api.example.com/hello');
     check(res, { 'status was 200 clear': (r) => r.status == 200 });
     // console.log(res.status);
     // sleep(1);
